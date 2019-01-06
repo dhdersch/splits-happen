@@ -28,3 +28,25 @@ Use the test cases from the table below to validate the scoring logic of your pr
 | X7/9-X-88/-6XXX81     | (10+7+3) + (7+3+9) + 9 + (10+0+8) + 8 + (8+2+0) + 6 + (10+10+10) + (10+10+8) + (10+8+1)                                         | 167         |
 
 
+## How to run and test
+
+Follow these steps to run the program:
+
+1. [Install Go](https://golang.org/doc/install)
+2. Clone this repository
+3. Open a shell, and change to the root directory of this repository
+
+From here, you can run the program as follows:
+
+```
+$ go run splits.go 'XXXXXXXXXXXX'
+```
+
+To run the test cases in `splits_test.go`, do the following:
+
+```
+# go test -run TestSplitsScore
+```
+
+Feel free to change some of the `expectedResult` values in `splits_test.go`
+to observe what the failed test case values look like.
